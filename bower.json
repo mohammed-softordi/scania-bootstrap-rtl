@@ -1,0 +1,30 @@
+{
+  "name": "scania-bootstrap-rtl",
+  "version": "0.0.1",
+  "description": "Bootstrap RTL provides simple yet robust right-to-left capability for Scania-bootstrap theme.",
+  "main": "scania-bootstrap-rtl.less",
+  "keywords": [
+    "RTL",
+    "bootstrap-rtl",
+    "scania-bootstrap",
+    "scania-bootstrap-rtl"
+  ],
+  "authors": [
+    "Scania",
+    "Mohammed Ayowa <mohammed.ayowa@scania.com> (mohammed.ayowa@scania.com)",
+    "Leterius Martin <martin.leterius@scania.com> (martin.leterius@scania.com)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mohammed-softordi/scania-bootstrap-rtl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mohammed-softordi/scania-bootstrap-rtl.git"
+  }
+}
