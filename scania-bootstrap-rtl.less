@@ -1,7 +1,16 @@
-.bootstrap .navbar-header, .bootstrap .navbar-brand, .bootstrap .nav-sidebar, .bootstrap .navbar-left{
-    float: right !important;
+.bootstrap {
+	
+	@import "bootstrap-rtl/bootstrap-rtl.less";
+
+	.navbar-header, .navbar-brand, .nav-sidebar, .navbar-left {
+	    float: right !important;
+	}
+	.navbar-right {
+	    float: left !important;
+	    margin-left: 20px !important;
+	}
+	ul.navbar-right > li, ul.navbar-left > li  {
+	    float: right !important;
+	}
 }
-.bootstrap .navbar-right {
-    float: left !important;
-    margin-left: 20px !important;
-}
+
