@@ -1,2 +1,2 @@
 # scania-bootstrap-rtl
-RTL support for Scania-ui
+Bootstrap RTL provides simple yet robust right-to-left capability for Scania-bootstrap theme.

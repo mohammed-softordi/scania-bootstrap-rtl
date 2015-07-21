@@ -6,7 +6,7 @@ $(document).ready(function(){
           
     function getElementWithFontSize() {
     	var elementList = $('body').find('*');
-       	return $('.bootstrap-rtl').find('*').each(function(){
+       	return $('.bootstrap-rtl').find('*').not("[class^='icon'], [class^='btn'], [class^='fa']").each(function(){
        		if($(this).css('font-size') !== ''){
 				return $(this);
 			}
