@@ -1,0 +1,12 @@
+.bootstrap .navbar-header, .bootstrap .navbar-brand, .bootstrap .nav-sidebar, .bootstrap .navbar-left {
+    float: right !important;
+}
+
+.bootstrap .navbar-right {
+    float: left !important;
+    margin-left: 20px !important;
+}
+
+.bootstrap ul.navbar-right > li, .bootstrap ul.navbar-left > li {
+    float: right !important;
+}
