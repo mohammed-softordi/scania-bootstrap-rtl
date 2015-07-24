@@ -36,6 +36,24 @@ Add the .sc-bootstrap-rtl selector to the body tag in your index.html to bootstr
 
     <body class="bootstrap sc-bootstrap-rtl cwp" ng-controller="CoreCtrl as core" ng-attr-data-env="{{core.envname}}">
 
+Optionally, initialize the browserLocaleSettings service that comes with scania-bootstrap-rtl with your supported languages. You can do that in the run method of your app or in localization service:
+
+    angular.module('yourapp').constant('defaultLocale', 'sv-SE');
+    angular.module('yourapp').constant('localesSupported', ['ar-AE', 'sv-SE']);
+    angular.module('yourapp').constant('supportedRTLLanguages', ['ar-AE', 'ur-PA', 'fa-IR']);
+
+   angular.module('yourapp').run(function (browserLocaleSettings, localesSupported, defaultLocale, supportedRTLLanguages){
+         browserLocaleSettings.init(localesSupported, defaultLocale, supportedRTLLanguages);
+    })
+
+By default scania-bootstrap-rtl provides the following locales :
+
+    defaultLanguage = 'sv-SE',
+    defaultRTLLanguages = ['ar-AE', 'ur-PA', 'he-IL', 'fa-IR'],
+    defaultSupportedLanguages = ['ar-AE', 'sv-SE', 'en-GB'];
+
+The browserLocaleSettings exposes some convenient methods like <small>isRTL()</small> and <small>getFirstBrowserLanguage()</small> to retrieve the client locale settings
+
 # Examples
 
 navbar-header and navbar-brand will flip your navigation to the right

@@ -88,7 +88,7 @@
                 isRTL: _isRTL
             },
             defaultLanguage = 'sv-SE',
-            defaultRTLLanguages = ['ar-AE', 'ur-PA', 'eb-IS', 'per-IR'],
+            defaultRTLLanguages = ['ar-AE', 'ur-PA', 'he-IL', 'fa-IR'],
             defaultSupportedLanguages = ['ar-AE', 'sv-SE', 'en-GB'];
 
         return service;
