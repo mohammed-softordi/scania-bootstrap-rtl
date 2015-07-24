@@ -19,7 +19,7 @@ scania-bootstrap-rtl provides simple yet robust right-to-left capability for sca
 
      bower install scania-bootstrap-rtl
 
-#Usage
+# Usage
 
 Add the following script to your index.html file and you are good to go :<br/>
 
@@ -32,9 +32,36 @@ Next inject the directive into your app
 
     angular.module('yourapp', ['scania.bootstrap.rtl']);
 
-Add the .sc-bootstrap-rtl selector to the body tag in your index.html to bootstrap the directive and follow the Scania Bootstrap RTL code conventions to
+Add the .sc-bootstrap-rtl selector to the body tag in your index.html to bootstrap the directive and follow the Scania Bootstrap RTL code conventions regarding selectors and design principles.
 
     <body class="bootstrap sc-bootstrap-rtl cwp" ng-controller="CoreCtrl as core" ng-attr-data-env="{{core.envname}}">
+
+# Examples
+
+navbar-header and navbar-brand will flip your navigation to the right
+
+    <div class="navbar-header cwp-navbar-header visible-lg">
+        <span class="navbar-brand cwp-navbar-brand"></span>
+        <h4 class="text-uppercase brand-name" ng-bind="profile.customerName"></h4>
+    </div>
+
+
+navbar-left or navbar-right will flip your navigation to the right or left
+
+    <div class="collapse navbar-collapse navbar-submenu-collapse">
+        <ul class="nav navbar-nav navbar-left">
+             <li ng-repeat="item in mainItems"><a href="#{{item.url}}" ng-class="{'active': control.isActive('{{item}}')}"><i ng-class="item.icon" ></i>{{item.title}}</a></li>
+              <li class="dropdown" data-ng-if="more">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" ng-class="dropdownActive">More<span ng-bind="dropdownLabel"></span><b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                        <li ng-repeat="item in moreItems"><a href="#{{item.url}}" ng-class="{'active': control.isActive('{{item}}', true)}"><i ng-class="item.icon" ></i>{{item.title}}</a></li>
+                   </ul>
+              </li>
+         </ul>
+         <ul class="nav navbar-nav navbar-right">
+              <li ng-repeat="item in commonItems"><a href="#{{item.url}}"><i ng-class="item.icon" class="type--padding-right"></i> {{item.title}}</a></li>
+         </ul>
+    </div>
 
 The complete list of code conventions can be found <a href="http://http://static.scania.com/....">here</a>
 
