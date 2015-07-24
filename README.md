@@ -3,7 +3,7 @@
 AngularJS directive for <a href="https://github.com/morteza/bootstrap-rtl">Bootstrap-rtl</a><br/>
 scania-bootstrap-rtl provides simple yet robust right-to-left capability for scania-bootstrap theme.
 
-###<a href="http://static.scania.com/....">Demo</a>
+###<a href="https://static.scania.com/cds/cds-site/scania-bootstrap-rtl.html">Demo</a>
 
 # Getting Started
 
@@ -63,7 +63,7 @@ navbar-left or navbar-right will flip your navigation to the right or left
          </ul>
     </div>
 
-The complete list of code conventions can be found <a href="http://http://static.scania.com/....">here</a>
+The complete list of code conventions can be found <a href="https://static.scania.com/cds/cds-site/scania-bootstrap-rtl.html">here</a>
 
 
 

@@ -14,11 +14,10 @@
   ],
   "authors": [
     "Scania",
-    "Mohammed Ayowa <mohammed.ayowa@scania.com> (mohammed.ayowa@scania.com)",
-    "Leterius Martin <martin.leterius@scania.com> (martin.leterius@scania.com)"
+    "Mohammed Ayowa <mohammed.ayowa@scania.com> (mohammed.ayowa@scania.com)"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/mohammed-softordi/scania-bootstrap-rtl",
+  "homepage": "https://static.scania.com/cds/cds-site/scania-bootstrap-rtl/scania-bootstrap-rtl.html",
   "ignore": [
     "**/.*",
     "node_modules",
