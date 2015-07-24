@@ -42,7 +42,7 @@ Optionally, initialize the browserLocaleSettings service that comes with scania-
     angular.module('yourapp').constant('localesSupported', ['ar-AE', 'sv-SE']);
     angular.module('yourapp').constant('supportedRTLLanguages', ['ar-AE', 'ur-PA', 'fa-IR']);
 
-   angular.module('yourapp').run(function (browserLocaleSettings, localesSupported, defaultLocale, supportedRTLLanguages){
+    angular.module('yourapp').run(function (browserLocaleSettings, localesSupported, defaultLocale, supportedRTLLanguages){
          browserLocaleSettings.init(localesSupported, defaultLocale, supportedRTLLanguages);
     })
 
@@ -52,7 +52,7 @@ By default scania-bootstrap-rtl provides the following locales :
     defaultRTLLanguages = ['ar-AE', 'ur-PA', 'he-IL', 'fa-IR'],
     defaultSupportedLanguages = ['ar-AE', 'sv-SE', 'en-GB'];
 
-The browserLocaleSettings exposes some convenient methods like <small>isRTL()</small> and <small>getFirstBrowserLanguage()</small> to retrieve the client locale settings
+The browserLocaleSettings service exposes some convenient methods like <b>isRTL()</b> and <b>getFirstBrowserLanguage()</b> to retrieve the client locale settings
 
 # Examples
 
