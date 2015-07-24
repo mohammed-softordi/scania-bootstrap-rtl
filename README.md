@@ -1,6 +1,4 @@
-# scania-bootstrap-rtl
-
-[![Join the chat at https://gitter.im/mohammed-softordi/scania-bootstrap-rtl](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mohammed-softordi/scania-bootstrap-rtl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# scania-bootstrap-rtl [![Join the chat at https://gitter.im/mohammed-softordi/scania-bootstrap-rtl](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mohammed-softordi/scania-bootstrap-rtl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 AngularJS directive for <a href="https://github.com/morteza/bootstrap-rtl">Bootstrap-rtl</a><br/>
 scania-bootstrap-rtl provides simple yet robust right-to-left capability for scania-bootstrap theme.
