@@ -34,12 +34,14 @@
     "bootstrap-rtl": "3.3.2-rc1",
     "underscore": "~1.7.0",
     "angular-localization": "~1.2.1",
-    "angular-css": "~1.0.7"
+    "angular-css": "~1.0.7",
+    "jquery": "2.0.3"
   },
   "devDependencies": {
     "bootstrap-rtl": "3.3.2-rc1",
     "underscore": "~1.7.0",
     "angular-localization": "~1.2.1",
-    "angular-css": "~1.0.7"
+    "angular-css": "~1.0.7",
+    "jquery": "2.0.3"
   }
 }

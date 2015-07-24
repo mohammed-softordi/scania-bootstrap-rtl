@@ -83,15 +83,20 @@
 
     function browserLocaleSettings($window, locale) {
         var service = {
-            init: _init,
-            getFirstBrowserLanguage: _getFirstBrowserLanguage,
-            isRTL: _isRTL
-        };
+                init: _init,
+                getFirstBrowserLanguage: _getFirstBrowserLanguage,
+                isRTL: _isRTL
+            },
+            defaultLanguage = 'sv-SE',
+            defaultRTLLanguages = ['ar-AE', 'ur-PA', 'eb-IS', 'per-IR'],
+            defaultSupportedLanguages = ['ar-AE', 'sv-SE', 'en-GB'];
+
         return service;
 
-        function _init (supportedLanguages, defaultLanguage) {
-            service.supportedLanguages = supportedLanguages;
-            service.defaultLanguage = defaultLanguage;
+        function _init (supportedLanguages, language, rtlLanguages) {
+            service.defaultLanguage = defaultLanguage || defaultLanguage;
+            service.supportedRTLLanguages = rtlLanguages || defaultRTLLanguages;
+            service.supportedLanguages = supportedLanguages || defaultSupportedLanguages;
         }
 
         function _getFirstBrowserLanguage () {
@@ -126,8 +131,7 @@
 
         function _isRTL () {
             var currentLocale = locale.getLocale() || _getFirstBrowserLanguage();
-            return _.startsWith(currentLocale, 'ar');
+            return _.contains(service.supportedRTLLanguages, currentLocale);
         }
-
     }
 })();
