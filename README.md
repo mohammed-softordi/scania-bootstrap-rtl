@@ -83,7 +83,19 @@ navbar-left or navbar-right will flip your navigation to the right or left
 
 The complete list of code conventions can be found <a href="https://static.scania.com/cds/cds-site/scania-bootstrap-rtl/scania-bootstrap-rtl.html">here</a>
 
+# Contributions
 
+If you want to contribute, please:
+
+	* Fork the project.
+	* Run test (karma start karma.config.js)
+	* Make your feature addition or bug fix and test it.
+	* Run test to make sure you haven't break anything.
+	* Send me a pull request on Github.
+
+## License
+
+scania-bootstrap-rtl is released under the [MIT License](http://www.opensource.org/licenses/MIT).
 
 
 
