@@ -83,20 +83,20 @@
 
     function browserLocaleSettings($window, locale) {
         var service = {
-                init: _init,
-                getFirstBrowserLanguage: _getFirstBrowserLanguage,
-                isRTL: _isRTL
-            },
-            defaultLanguage = 'sv-SE',
-            defaultRTLLanguages = ['ar-AE', 'ur-PA', 'he-IL', 'fa-IR'],
-            defaultSupportedLanguages = ['ar-AE', 'sv-SE', 'en-GB'];
+            init: _init,
+            getFirstBrowserLanguage: _getFirstBrowserLanguage,
+            isRTL: _isRTL
+        };
+        service.defaultLanguage = 'sv-SE';
+        service.supportedRTLLanguages = ['ar-AE', 'ur-PA', 'eb-IS', 'per-IR'];
+        service.supportedLanguages = ['ar-AE', 'sv-SE', 'en-GB'];
 
         return service;
 
-        function _init (supportedLanguages, language, rtlLanguages) {
-            service.defaultLanguage = defaultLanguage || defaultLanguage;
-            service.supportedRTLLanguages = rtlLanguages || defaultRTLLanguages;
-            service.supportedLanguages = supportedLanguages || defaultSupportedLanguages;
+        function _init (supportedLanguages, defaultLanguage, rtlLanguages) {
+            service.defaultLanguage = defaultLanguage;
+            service.supportedRTLLanguages = rtlLanguages;
+            service.supportedLanguages = supportedLanguages;
         }
 
         function _getFirstBrowserLanguage () {
@@ -107,14 +107,14 @@
 
             // support for HTML 5.1 "navigator.languages"
             if (_.isArray(nav.languages)) {
-                _.each(nav.languages, function(){
-                    return getLanguageSupported(nav.languages[i]);
-                });
+                for (i = 0; i < nav.languages.length; i++) {
+                       return getLanguageSupported(nav.languages[i]);
+                }
             }
             // support for other well known properties in browsers
-            _.each(browserLanguagePropertyKeys, function(key){
-                return getLanguageSupported(nav[key]);
-            });
+            for (i = 0; i < browserLanguagePropertyKeys.length; i++){
+                return getLanguageSupported(nav[browserLanguagePropertyKeys[i]]);
+            };
 
             return null;
         }
@@ -130,7 +130,7 @@
         }
 
         function _isRTL () {
-            var currentLocale = locale.getLocale() || _getFirstBrowserLanguage();
+            var currentLocale = locale.getLocale() || service.getFirstBrowserLanguage();
             return _.contains(service.supportedRTLLanguages, currentLocale);
         }
     }

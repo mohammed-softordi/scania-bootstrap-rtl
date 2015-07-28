@@ -1,6 +1,6 @@
 {
   "name": "scania-bootstrap-rtl",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Bootstrap RTL provides simple yet robust right-to-left capability for Scania-bootstrap theme.",
   "main": [
     "scania-bootstrap-rtl.css",
@@ -14,10 +14,11 @@
   ],
   "authors": [
     "Scania",
-    "Mohammed Ayowa <mohammed.ayowa@scania.com> (mohammed.ayowa@scania.com)"
+    "Mohammed Ayowa <mohammed.ayowa@scania.com> (mohammed.ayowa@scania.com)",
+    "Leterius Martin <martin.leterius@scania.com> (martin.leterius@scania.com)"
   ],
   "license": "MIT",
-  "homepage": "https://static.scania.com/cds/cds-site/scania-bootstrap-rtl/scania-bootstrap-rtl.html",
+  "homepage": "https://github.com/mohammed-softordi/scania-bootstrap-rtl",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -31,16 +32,14 @@
   },
   "dependencies": {
     "bootstrap-rtl": "3.3.2-rc1",
-    "underscore": "~1.7.0",
+    "underscore": "~1",
     "angular-localization": "~1.2.1",
-    "angular-css": "~1.0.7",
-    "jquery": "2.0.3"
+    "angular-css": "~1.0.7"
   },
   "devDependencies": {
     "bootstrap-rtl": "3.3.2-rc1",
-    "underscore": "~1.7.0",
+    "underscore": "~1",
     "angular-localization": "~1.2.1",
-    "angular-css": "~1.0.7",
-    "jquery": "2.0.3"
+    "angular-css": "~1.0.7"
   }
 }
