@@ -108,12 +108,14 @@
             // support for HTML 5.1 "navigator.languages"
             if (_.isArray(nav.languages)) {
                 for (i = 0; i < nav.languages.length; i++) {
-                       return getLanguageSupported(nav.languages[i]);
+                    var language = getLanguageSupported(nav.languages[i]);
+                    if(language) return language;
                 }
             }
             // support for other well known properties in browsers
             for (i = 0; i < browserLanguagePropertyKeys.length; i++){
-                return getLanguageSupported(nav[browserLanguagePropertyKeys[i]]);
+                var language = getLanguageSupported(nav[browserLanguagePropertyKeys[i]]);
+                if(language) return language;
             };
 
             return null;
