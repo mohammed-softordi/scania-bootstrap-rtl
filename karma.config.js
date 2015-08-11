@@ -20,7 +20,7 @@ module.exports = function (config) {
             {pattern: 'bower_components/bootstrap-rtl/dist/css/bootstrap-rtl.min.css', watched: false, include: true, served: true},
             {pattern: 'bower_components/underscore/underscore.js', watched: false, include: true},
             {pattern: 'bower_components/jquery/dist/jquery.js', watched: false, include: true}, ,
-            {pattern: 'scania-bootstrap-rtl.js', watched: true, include: true},
+            {pattern: 'src/js/scania-bootstrap-rtl.js', watched: true, include: true},
             {pattern: 'test/**/*.spec.js', watched: true, include: true}
         ],
 

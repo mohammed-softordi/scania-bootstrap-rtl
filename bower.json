@@ -3,8 +3,9 @@
   "version": "1.0.1",
   "description": "Bootstrap RTL provides simple yet robust right-to-left capability for Scania-bootstrap theme.",
   "main": [
-    "scania-bootstrap-rtl.css",
-    "scania-bootstrap-rtl.js"
+    "src/css/scania-bootstrap-rtl.css",
+    "src/css/scania-font-awesome-rtl.css",
+    "src/js/scania-bootstrap-rtl.js"
   ],
   "keywords": [
     "RTL",
