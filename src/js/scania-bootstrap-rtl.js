@@ -48,6 +48,7 @@
 
                 function applyRTL () {
                     $css.add('/bower_components/bootstrap-rtl/bootstrap-rtl.css');
+                    $css.add('/bower_components/bootstrap-rtl/scania-font-awesome-rtl.css');
                     $css.add('/bower_components/bootstrap-rtl/scania-bootstrap-rtl.css');
 
                     var elementWithFontSize = getElementWithFontSize(),

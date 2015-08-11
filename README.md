@@ -21,6 +21,9 @@ scania-bootstrap-rtl provides simple yet robust right-to-left capability for sca
 
 # Usage
 
+Copy bootstrap-rtl.css, scania-font-awesome-rtl and scania-bootstrap-rtl.css files to bower_components/bootstrap-rtl directory under your app root.
+
+
 Add the following script to your index.html file and you are good to go :<br/>
 
      <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
