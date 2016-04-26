@@ -16,7 +16,7 @@
      * @description
      * Scania lightbox module including templates
      */
-    angular.module('scania.bootstrap.rtl', ['ngLocalize', 'door3.css']);
+    angular.module('scania.bootstrap.rtl', ['ngLocalize', 'angularCSS']);
 
     angular.module('scania.bootstrap.rtl').directive('scBootstrapRtl', ['$css', 'browserLocaleSettings', '$compile', '$timeout', scBootstrapRtl]);
     angular.module('scania.bootstrap.rtl').directive('rtlSymbol', ['$compile', '$timeout', 'browserLocaleSettings', rtlSymbol]);
