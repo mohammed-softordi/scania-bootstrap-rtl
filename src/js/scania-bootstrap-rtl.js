@@ -168,7 +168,7 @@
 
         function _isRTL() {
             var currentLocale = locale.getLocale() || service.getFirstBrowserLanguage();
-            return _.contains(service.supportedRTLLanguages, currentLocale);
+            return _.includes(service.supportedRTLLanguages, currentLocale);
         }
     }
 })();
