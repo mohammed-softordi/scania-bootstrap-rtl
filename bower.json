@@ -1,6 +1,6 @@
 {
   "name": "scania-bootstrap-rtl",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Bootstrap RTL provides simple yet robust right-to-left capability for Scania-bootstrap theme.",
   "main": [
     "src/css/scania-bootstrap-rtl.css",
@@ -40,7 +40,8 @@
     "lodash": "~4.14.1",
     "angular-localization": "~1.2.1",
     "angular-css": "~1.0.7",
-    "font-awesome-rtl": "1.0.0"
+    "font-awesome-rtl": "1.0.0",
+    "language-name-by-isocode": "0.0.1"
   },
   "devDependencies": {
     "bootstrap-rtl": "3.3.2-rc1",
